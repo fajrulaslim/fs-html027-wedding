@@ -1,0 +1,9 @@
+- section akad nikah seperti gambar ref1.png (box dan background menggunakan yg diluar saja)
+- section rsvp & komen digabung seperti gambar ref2.png (box dan background menggunakan yg diluar saja)
+- love story ditambah gambar seperti gambar ref3.png
+- section terakhir sebelum footer diberi gambar full dengan efek scroll seperti referensi di https://jadinikah.co/aquilla01/?to=Nama+Tamu+Undangan
+- screen pertama menggunakan referensi seperti di web referensi di gambar ref5.png
+- setiap kupu2 dibikin bergerak, file ada di assets.zip/kupukupu
+
+
+https://pinangan.id/tema-ae-gold/
