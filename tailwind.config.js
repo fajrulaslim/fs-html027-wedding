@@ -25,6 +25,9 @@ module.exports = {
         },
         grey: {
           100: '#888787',
+        },
+        brown: {
+          100: '#c8bfb3'
         }
       },
       animation: {
