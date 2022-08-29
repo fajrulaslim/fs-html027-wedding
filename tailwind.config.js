@@ -32,6 +32,9 @@ module.exports = {
         brown: {
           20: '#f8f5e8',
           100: '#c8bfb3'
+        },
+        paper: {
+          100: '#f6f6f6'
         }
       },
       animation: {
