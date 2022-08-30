@@ -29,41 +29,41 @@
 
 <body class="">
 
-    <section class="cover-undangan w-full h-screen flex items-center justify-center relative overflow-hidden" id="bukaUndangan">
+    <section class="cover-undangan w-full h-screen flex items-center justify-center relative overflow-hidden" id="section-home">
         <div class="absolute top-0 left-0 w-full h-screen bg-no-repeat bg-cover bg-center"
             style="background-image: url(./images/background/background.jpg);"></div>
         <img src="images/background/header-1.png" alt="bunga"
             class="absolute -bottom-32 sm:-bottom-[150px] -left-40 sm:-left-[200px] w-[300px] sm:w-[600px]">
         <img src="images/background/header-2.png" alt="bunga"
             class="absolute -bottom-[70px] sm:-bottom-[150px] -right-[70px] sm:-right-[150px] w-[200px] sm:w-[500px]">
-        <img src="images/kupu-kupu/kupu3.gif" alt="kupu-kupu"
-            class="absolute top-[80px] sm:top-1/4 sm:-translate-y-1/4 left-2/4 -translate-x-2/4 sm:left-1/4 sm:-translate-x-1/4 w-[180px] sm:w-[300px]">
+        <img src="images/background/kupu1.png" alt="kupu-kupu"
+            class="absolute top-[80px] sm:top-1/4 sm:-translate-y-1/4 left-2/4 -translate-x-2/4 sm:left-1/4 sm:-translate-x-1/4 w-[160px] sm:w-[240px]">
         <div class="container max-w-screen-xl mx-auto relative">
             <div class="text-center sm:ml-auto sm:mr-10 sm:w-8/12">
                 <div class="font-belle text-mobile sm:text-2xl text-oldGreen-500 mb-14 sm:mb-10 font-medium italic">
                     THE WEDDING OF
                 </div>
-                <h1 class="font-nautigal text-6xl sm:text-[200px] text-oldRose-500 italic mb-14 sm:my-32">
+                <h1 class="font-nautigal text-6xl sm:text-[200px] text-oldRose-500 italic mb-14 sm:mt-28 sm:mb-14">
                     Kiara & Kofu
                 </h1>
-                <div class="font-belle text-mobile sm:text-2xl text-oldGreen-500 mb-5 font-medium">
+                <div class="font-belle text-mobile sm:text-2xl text-oldGreen-500 mb-6 sm:mb-10 font-medium">
                     29 FEBRUARY 2021
                 </div>
-                <!-- <a href="#bukaUndangan" onclick="bukaUndangan()"
-                    class="font-belle text-sm text-cream-10 bg-oldGreen-100 py-3 px-6 rounded-xl border border-black-100"><i
-                        class="fa-solid fa-envelope mr-2"></i> Buka Undangan</a> -->
+                <a href="#bukaUndangan" id="btnBukaUndangan" onclick="bukaUndangan()" class="font-belle text-sm sm:text-xl text-cream-50 bg-oldGreen-100 py-3 px-6 rounded-xl border border-black-100 mb-20">
+                    <i class="fa-solid fa-envelope mr-2"></i> Buka Undangan
+                </a>
             </div>
         </div>
     </section>
 
     
 
-    <div class="isi-undangan">
+    <div class="isi-undangan hidden" id="bukaUndangan">
         <section class="h-[480px] sm:h-screen flex items-center justify-center relative">
             <div class="absolute top-0 left-0 w-full h-[480px] sm:h-screen bg-no-repeat bg-cover bg-center -scale-y-100" style="background-image: url(./images/background/background.jpg);"></div>
             <div class="container max-w-screen-xl px-4 sm:px-0 relative flex justify-center mx-auto ">
                 <div class="columns-1 sm:w-3/4">
-                    <div class="text-center">
+                    <div class="text-center relative">
                         <h1 class="js-show-fadeInUp text-center font-nautigal text-5xl sm:text-7xl md:text-8xl text-oldRose-400 mb-10 sm:mb-20 italic">
                             Bismillahirrahmanirrahiim</h1>
                         <p class="js-show-fadeInDown font-belle text-base sm:text-2xl text-oldGreen-500 mb-5">
@@ -75,19 +75,20 @@
                         <p class="js-show-fadeInDown font-belle text-base sm:text-2xl text-oldGreen-500 font-medium">
                             (QS Ar-Rum : 21)
                         </p>
+                        <img src="images/background/kupu2.png" alt="kupu-kupu" class="absolute -top-20 sm:top-10 -right-0 sm:-right-20 w-[100px] sm:w-[200px] -scale-x-100">
                     </div>
                 </div>
             </div>
         </section>
     </div>
 
-    <div class="isi-undangan">
+    <div class="isi-undangan hidden">
         <section class="h-[480px] sm:h-screen flex items-center justify-center relative">
             <div class="absolute top-0 left-0 w-full h-[480px] sm:h-screen bg-no-repeat bg-cover bg-center"
                 style="background-image: url(./images/background/background.jpg);"></div>
             <div class="container max-w-screen-xl px-4 sm:px-0 mx-auto relative">
                 <div class="columns-1">
-                    <div class="text-center">
+                    <div class="text-center relative">
                         <img src="./images/background/bunga-kabar.png" class="w-2/4 sm:w-72 mb-8 sm:mb-14 mx-auto" alt="bunga">
                         <p class="js-show-fadeInDown font-belle text-base sm:text-2xl text-oldGreen-500 mb-16 sm:mb-64">
                             Assalamu'alaikum Warahmatullahi Wabarakatuh. <br>
@@ -95,11 +96,14 @@
                             <br>
                             kami hendak menyampaikan kabar bahagia atas pernikahaan putra putri kami:
                         </p>
-                        <div class="relative">
+                        <img src="images/background/kupu2.png" alt="kupu-kupu" class="absolute top-20 sm:top-32 -right-0 sm:right-48 w-[100px] sm:w-[200px]">
+
+                        <div class="relative" id="section-mempelai">
                             <img src="./images/background/bg-text-1.png" class="w-9/12 sm:w-6/12 mx-auto" alt="">
-                            <h1
-                                class="js-show-fadeInUp absolute top-2/4 -translate-y-2/4 left-2/4 -translate-x-2/4 font-nautigal text-5xl sm:text-7xl text-oldRose-400 italic">
-                                Mempelai</h1>
+                            <h1 class="js-show-fadeInUp absolute top-2/4 -translate-y-2/4 left-2/4 -translate-x-2/4 font-nautigal text-5xl sm:text-7xl text-oldRose-400 italic">
+                                Mempelai
+                            </h1>
+                            <img src="images/background/kupu3.png" alt="kupu-kupu" class="absolute top-2 sm:top-6 -left-0 sm:left-0 w-[50px] sm:w-[100px]">
                         </div>
                     </div>
                 </div>
@@ -107,7 +111,7 @@
         </section>
     </div>
 
-    <div class="isi-undangan">
+    <div class="isi-undangan hidden">
         <section class="h-full sm:h-screen flex items-center justify-center relative py-6 sm:py-0">
             <div class="absolute top-0 left-0 w-full h-full sm:h-screen bg-no-repeat bg-cover bg-center -scale-y-100"
                 style="background-image: url(./images/background/background.jpg);"></div>
@@ -159,8 +163,8 @@
         </section>
     </div>
 
-    <div class="isi-undangan">
-        <section class="h-screen flex items-center justify-center relative overflow-hidden">
+    <div class="isi-undangan hidden">
+        <section class="h-screen flex items-center justify-center relative overflow-hidden" id="section-savedate">
             <div class="absolute top-0 left-0 w-full h-screen bg-no-repeat bg-cover bg-center" style="background-image: url(./images/background/background.jpg);"></div>
             <div class="container max-w-screen-xl px-4 sm:px-0 mx-auto relative">
                 <div class="columns-1">
@@ -206,14 +210,13 @@
                 </div>
             </div>
             <img src="images/background/buket-bunga-1.png" alt="bunga"
-                class="js-show-fadeInLeft absolute top-0 -left-10 sm:-left-20 w-[160px] sm:w-[400px]">
-            
+                class="js-show-fadeInLeft absolute top-0 -left-10 sm:-left-20 w-[160px] sm:w-[400px]">            
             <img src="images/background/buket-bunga-2.png" alt="bunga"
                 class="js-show-fadeInLeft absolute -bottom-[100px] sm:-bottom-[200px] -right-[70px] sm:-right-[140px] w-[180px] sm:w-[400px]">
         </section>
     </div>
 
-    <div class="isi-undangan">
+    <div class="isi-undangan hidden">
         <section class="js-show-fadeIn w-full h-[480px] sm:h-[750px] relative overflow-hidden">
             <div class="absolute top-0 left-0 w-full h-[480px] sm:h-[750px] object-cover bg-no-repeat bg-cover bg-center"
                 style="background-image: url('images/background/bg-countdown.jpg');">
@@ -245,7 +248,7 @@
         </section>
     </div>
 
-    <div class="isi-undangan">
+    <div class="isi-undangan hidden">
         <section class="flex h-full items-center justify-center relative py-14 sm:py-32">
             <div class="absolute top-0 left-0 w-full h-full bg-no-repeat bg-cover bg-center"
                 style="background-image: url(./images/background/background.jpg);"></div>
@@ -259,9 +262,10 @@
                     </div>
                 </div>
                 <div class="grid grid-cols-1 sm:grid-cols-2 gap-2 mb-5">
-                    <div class="sm:text-right ml-8 sm:ml-0 mr-3">
+                    <div class="sm:text-right ml-8 sm:ml-0 mr-3 relative">
                         <p class="font-nautigal text-3xl sm:text-4xl text-oldGreen-500 mb-0">2015</p>
                         <p class="font-belle text-base sm:text-xl font-medium text-oldGreen-500">Januari</p>
+                        <img src="images/background/kupu2.png" alt="kupu-kupu" class="absolute top-0 sm:top-32 right-0 sm:right-48 w-[80px] sm:w-[160px]">
                     </div>
                     <div class="flex">
                         <div class="mr-4"><i class="fa-solid fa-heart text-xl text-oldGreen-500"></i></div>
@@ -304,9 +308,10 @@
                     </div>
                 </div>
                 <div class="grid grid-cols-1 sm:grid-cols-2 gap-2 mb-5">
-                    <div class="sm:text-right ml-8 sm:ml-0 mr-3">
+                    <div class="sm:text-right ml-8 sm:ml-0 mr-3 relative">
                         <p class="font-nautigal text-3xl sm:text-4xl text-oldGreen-500 mb-0">2015</p>
                         <p class="font-belle text-base sm:text-xl font-medium text-oldGreen-500">Januari</p>
+                        <img src="images/background/kupu2.png" alt="kupu-kupu" class="absolute top-0 sm:top-32 right-0 sm:right-48 w-[80px] sm:w-[160px]">
                     </div>
                     <div class="flex">
                         <div class="mr-4"><i class="fa-solid fa-heart text-xl text-oldGreen-500"></i></div>
@@ -317,12 +322,14 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </div>            
+            <img src="images/background/buket-bunga-1.png" alt="bunga"
+                class="js-show-fadeInLeft absolute -bottom-[72px] sm:-bottom-[200px] -left-10 sm:-left-20 w-[160px] sm:w-[400px]">
         </section>
     </div>
 
-    <div class="isi-undangan">
-        <section class="h-full sm:h-screen flex items-center justify-center relative py-10 sm:py-36">
+    <div class="isi-undangan hidden">
+        <section class="h-full sm:h-screen flex items-center justify-center relative py-10 sm:py-36" id="section-gallery">
             <div class="absolute top-0 left-0 w-full h-full sm:h-screen bg-no-repeat bg-cover bg-center" style="background-image: url(./images/background/background.jpg);"></div>
             <div class="container max-w-screen-xl px-4 sm:px-0 mx-auto relative">
                 <div class="columns-1">
@@ -366,12 +373,15 @@
                         </div>
                     </a>
                 </div>
-            </div>            
-            <div class="absolute bottom-0 left-0 w-full h-[50px] sm:h-[100px] bg-no-repeat bg-cover bg-center" style="background-image: url(./images/background/bg-paper-atas.png);"></div>
+            </div>                         
+            <img src="images/background/buket-bunga-1.png" alt="bunga"
+                class="js-show-fadeInLeft absolute -top-[100px] sm:-top-[231px] -left-10 sm:-left-20 w-[160px] sm:w-[400px]"> 
+            <div class="absolute bottom-0 left-0 w-full h-[50px] sm:h-[100px] bg-no-repeat bg-cover bg-center" style="background-image: url(./images/background/bg-paper-atas.png);"></div>   
+            <img src="images/background/kupu2.png" alt="kupu-kupu" class="absolute bottom-0 right-1/4 w-[80px] sm:w-[160px] -scale-x-100">  
         </section>
     </div>
 
-    <div class="isi-undangan">
+    <div class="isi-undangan hidden">
         <section class="flex items-center justify-center relative bg-paper-100 py-2 sm:py-12">
             <div class="container max-w-screen-xl px-4 sm:px-0 mx-auto">
                 <div class="columns-1">
@@ -384,8 +394,8 @@
         </section>
     </div>
 
-    <div class="isi-undangan">
-        <section class="js-show-fadeIn pb-6 sm:pb-10 pt-20 sm:pt-32 w-full h-full sm:h-screen flex items-center justify-center relative">
+    <div class="isi-undangan hidden">
+        <section class="js-show-fadeIn pb-6 sm:pb-10 pt-20 sm:pt-32 w-full h-full sm:h-screen flex items-center justify-center relative overflow-hidden" id="section-ucapandoa">
             <div class="absolute top-0 left-0 w-full h-full sm:h-screen bg-no-repeat bg-cover bg-center" style="background-image: url(./images/background/background.jpg);"></div>             
             <div class="absolute top-0 left-0 w-full h-[50px] sm:h-[100px] bg-no-repeat bg-cover bg-center" style="background-image: url(./images/background/bg-paper-bawah.png);"></div>
             <div class="container max-w-screen-xl px-4 sm:px-0 mx-auto relative">
@@ -536,12 +546,15 @@
                         </div>
                     </div>
                 </div>
-            </div>         
+                <img src="images/background/kupu2.png" alt="kupu-kupu" class="absolute top-0 right-0 sm:left-2/4 sm:-translate-x-2/4 w-[80px] sm:w-[160px]">  
+            </div>       
+            <img src="images/background/buket-bunga-2.png" alt="bunga"
+                class="js-show-fadeInLeft absolute -bottom-[63px] sm:-bottom-[200px] -right-[50px] sm:-right-[140px] w-[120px] sm:w-[340px]">        
         </section>
     </div>
 
-    <div class="isi-undangan">
-        <section class="js-show-fadeIn py-6 sm:py-10 w-full h-full sm:h-screen flex items-center justify-center relative">
+    <div class="isi-undangan hidden">
+        <section class="js-show-fadeIn py-6 sm:py-10 w-full h-full sm:h-screen flex items-center justify-center relative overflow-hidden">
             <div class="absolute top-0 left-0 w-full h-full sm:h-screen bg-no-repeat bg-cover bg-center -scale-y-100"
                 style="background-image: url(./images/background/background.jpg);"></div>
             <div class="container max-w-screen-xl px-4 sm:px-0 mx-auto relative">
@@ -556,7 +569,7 @@
                         <a href="#" class="font-belle text-base sm:text-2xl text-white bg-oldRose-500 py-2 px-4 rounded-3xl">Open</a>
                     </div>
                 </div>
-                <div class="columns-1 bg-grey-50 rounded-3xl p-10">
+                <div class="columns-1 bg-grey-50 rounded-3xl p-10 relative">
                     <div class="text-center">
                         <h1 class="font-nautigal text-5xl sm:text-7xl text-oldRose-400 italic text-center mb-6">
                             Protokol Kesehatan
@@ -601,12 +614,15 @@
                             </p>
                         </div>
                     </div>
+                    <img src="images/background/kupu2.png" alt="kupu-kupu" class="absolute top-4 sm:top-0 left-4 sm:left-10 w-[80px] sm:w-[160px] -scale-x-100">  
                 </div>
             </div>
+            <img src="images/background/buket-bunga-2.png" alt="bunga"
+                class="js-show-fadeInLeft absolute -top-[100px] sm:-top-[264px] -right-[50px] sm:-right-[140px] w-[120px] sm:w-[340px]">
         </section>
     </div>
 
-    <div class="isi-undangan">
+    <div class="isi-undangan hidden">
         <section class="w-full h-[300px] sm:h-[500px] flex justify-center relative">
             <div class="absolute top-0 left-0 w-full h-[300px] sm:h-[500px] bg-no-repeat bg-cover bg-top" style="background-image: url(./images/background/background.jpg);"></div>
             <div class="container max-w-screen-xl relative flex justify-center mx-auto ">
@@ -620,7 +636,7 @@
         </section>
     </div>
 
-    <div class="isi-undangan js-show-fadeIn">
+    <div class="isi-undangan hidden js-show-fadeIn">
         <section class="w-full h-80 sm:h-screen flex items-end justify-center relative bg-no-repeat bg-cover bg-center"
             style="background-image: url(./images/background/bg-footer.jpg);">
             <div class="absolute top-0 left-0 w-full h-80 sm:h-screen opacity-60"
@@ -629,7 +645,7 @@
         </section>
     </div>
 
-    <footer class="isi-undangan js-show-fadeIn bg-brown-100   py-6">
+    <footer class="isi-undangan hidden js-show-fadeIn bg-brown-100   py-6">
         <div class="container max-w-screen-xl mx-auto px-20 text-center">
             <img src="images/logo.png" alt="" class="js-show-rotateIn w-24 mx-auto mb-4">
             <div class="flex justify-center">
@@ -643,33 +659,35 @@
         </div>
     </footer>
 
-    <!-- <button class="fixed bottom-32 sm:bottom-28 right-3 sm:right-10 bg-oldGreen-100 text-white rounded-full w-10 h-10 sm:w-12 sm:h-12 text-brown-300 text-xl sm:text-2xl"
+    <button class="isi-undangan hidden fixed bottom-32 sm:bottom-28 right-3 sm:right-10 bg-oldGreen-100 text-white rounded-full w-10 h-10 sm:w-14 sm:h-14 text-brown-300 text-xl sm:text-3xl"
         onclick="setAudio()">
         <i class="fa-solid fa-circle-stop" id="iconAudio"></i>
         <audio>
             <source src="audio/backsound.mp3" />
         </audio>
-    </button> -->
+    </button>
 
-    <!-- <div class="bottom-bar w-full fixed flex justify-center bottom-4 sm:bottom-6 left-2/4 -translate-x-2/4">
-        <div class="bg-cream-100 flex justify-center rounded-lg px-2" style="box-shadow: 0 18px 25px -15px rgb(0 0 0 / 66%)">
-            <a href="#">
-                <img src="images/icon-navbar/01.png" class="w-11 h-11 my-2 mx-2.5" alt="">
-            </a>
-            <a href="#">
-                <img src="images/icon-navbar/02.png" class="w-11 h-11 my-2 mx-2.5" alt="">
-            </a>
-            <a href="#">
-                <img src="images/icon-navbar/03.png" class="w-11 h-11 my-2 mx-2.5" alt="">
-            </a>
-            <a href="#">
-                <img src="images/icon-navbar/04.png" class="w-11 h-11 my-2 mx-2.5" alt="">
-            </a>
-            <a href="#">
-                <img src="images/icon-navbar/05.png" class="w-11 h-11 my-2 mx-2.5" alt="">
-            </a>
+    <div class="isi-undangan hidden">
+        <div class="bottom-bar w-full fixed flex justify-center bottom-4 sm:bottom-6 left-2/4 -translate-x-2/4">
+            <div class="bg-cream-50 flex justify-center rounded-lg px-2" style="box-shadow: 0 18px 25px -15px rgb(0 0 0 / 66%)">
+                <a href="#section-home">
+                    <img src="images/icon-navbar/01.png" class="w-11 sm:w-16 h-11 sm:h-16 my-2 mx-2.5" alt="">
+                </a>
+                <a href="#section-mempelai">
+                    <img src="images/icon-navbar/02.png" class="w-11 sm:w-16 h-11 sm:h-16 my-2 mx-2.5" alt="">
+                </a>
+                <a href="#section-savedate">
+                    <img src="images/icon-navbar/03.png" class="w-11 sm:w-16 h-11 sm:h-16 my-2 mx-2.5" alt="">
+                </a>
+                <a href="#section-gallery">
+                    <img src="images/icon-navbar/04.png" class="w-11 sm:w-16 h-11 sm:h-16 my-2 mx-2.5" alt="">
+                </a>
+                <a href="#section-ucapandoa">
+                    <img src="images/icon-navbar/05.png" class="w-11 sm:w-16 h-11 sm:h-16 my-2 mx-2.5" alt="">
+                </a>
+            </div>
         </div>
-    </div> -->
+    </div>
 
     <script src="./js/jquery-3.2.1.min.js"></script>
     <script src="./js/lightgallery/lightgallery.min.js"></script>
@@ -687,13 +705,14 @@
 
     <script type="text/javascript">
         // BUKA UNDANGAN
-        // const isiUndangan = document.querySelectorAll('.isi-undangan')
-        // function bukaUndangan() {
-        //     setAudio()
-        //     isiUndangan.forEach(item => {
-        //         item.classList.remove('hidden')
-        //     })
-        // }
+        const isiUndangan = document.querySelectorAll('.isi-undangan')
+        function bukaUndangan() {
+            setAudio()
+            isiUndangan.forEach(item => {
+                item.classList.remove('hidden')
+            })
+            document.getElementById("btnBukaUndangan").classList.add("hidden")
+        }
 
         // // LOAD FADEIN
         // const callbackFadeIn = function (entries) {

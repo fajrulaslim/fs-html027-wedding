@@ -17,6 +17,7 @@ module.exports = {
       },
       colors: {
         oldGreen: {
+          100: '#a9a058',
           500: '#54502b',
         },
         oldRose: {
@@ -32,6 +33,9 @@ module.exports = {
         brown: {
           20: '#f8f5e8',
           100: '#c8bfb3'
+        },
+        cream: {
+          50: '#eae3db'
         },
         paper: {
           100: '#f6f6f6'
