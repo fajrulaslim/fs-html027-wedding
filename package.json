@@ -16,7 +16,5 @@
   "author": "",
   "license": "ISC",
   "description": "",
-  "dependencies": {
-    "tailwind-gradient-mask-image": "^1.0.0"
-  }
+  "dependencies": {}
 }

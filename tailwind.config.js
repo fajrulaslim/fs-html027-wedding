@@ -79,11 +79,15 @@ module.exports = {
           "0%": { opacity: 0, transform: 'rotate(-180deg)' },
           "100%": { opacity: 1, transform: 'rotate(0deg)' }
         },
+        wiggle: {
+          '0%, 100%': { transform: 'rotate(-3deg) scale(0.9)' },
+          '50%': { transform: 'rotate(3deg) scale(1)' },
+        },
       },
       variants: {
-        animation: ["motion-safe"]
-      }
+        animation: ["motion-safe", "wiggle"],
+      },
     },
   },
-  plugins: [require("tailwind-gradient-mask-image")],
+  plugins: [],
 }
