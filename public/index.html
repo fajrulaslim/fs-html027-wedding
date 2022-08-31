@@ -24,6 +24,14 @@
 
     <link rel="stylesheet" href="css/style.css">
 
+    <style>
+        .box-clip-path {
+            --mask: radial-gradient(50px at 50px 50px,#0000 98%,#000) -50px -50px;
+            -webkit-mask: var(--mask);
+                    mask: var(--mask);
+        }
+    </style>
+
     <title>Pinangan ID</title>
 </head>
 
@@ -168,7 +176,7 @@
             <div class="absolute top-0 left-0 w-full h-screen bg-no-repeat bg-cover bg-center" style="background-image: url(./images/background/background.jpg);"></div>
             <div class="container max-w-screen-xl px-4 sm:px-0 mx-auto relative">
                 <div class="columns-1">
-                    <div class="text-center bg-grey-50 rounded-3xl p-10 sm:p-20">
+                    <div class="text-center bg-grey-50 box-clip-path rounded-3xl p-10 sm:p-20">
                         <img src="images/border/border-love-1.png" class="js-show-zoomIn w-full sm:w-5/12 mx-auto mb-1"
                             alt="border"
                             style="filter: invert(65%) sepia(8%) saturate(1357%) hue-rotate(349deg) brightness(88%) contrast(90%);">
@@ -261,14 +269,14 @@
                             Our Story to Tell</h1>
                     </div>
                 </div>
-                <div class="grid grid-cols-1 sm:grid-cols-2 gap-2 mb-5">
-                    <div class="sm:text-right ml-8 sm:ml-0 mr-3 relative">
+                <div class="grid grid-cols-1 sm:grid-cols-2">
+                    <div class="sm:text-right ml-8 sm:ml-0 relative sm:pr-10 sm:border-r-2 sm:border-oldGreen-500">
                         <p class="font-nautigal text-3xl sm:text-4xl text-oldGreen-500 mb-0">2015</p>
                         <p class="font-belle text-base sm:text-xl font-medium text-oldGreen-500">Januari</p>
                         <img src="images/background/kupu2.png" alt="kupu-kupu" class="absolute top-0 sm:top-32 right-0 sm:right-48 w-[80px] sm:w-[160px]">
                     </div>
-                    <div class="flex">
-                        <div class="mr-4"><i class="fa-solid fa-heart text-xl text-oldGreen-500"></i></div>
+                    <div class="flex pl-8 sm:pl-10 pb-5 relative">
+                        <div class="absolute -top-[8px] -left-[12px]"><i class="fa-solid fa-heart text-2xl text-oldGreen-500"></i></div>
                         <div class="bg-brown-20 rounded-lg drop-shadow-lg p-4 w-full sm:w-6/12">
                             <div class="font-nautigal text-3xl sm:text-4xl text-oldGreen-500 mb-0">Lorem, ipsum dolor.</div>
                             <img src="./images/photos/timelines1.jpg" class="my-1" alt="">
@@ -276,8 +284,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="hidden sm:grid sm:grid-cols-2 gap-2 mb-5">
-                    <div class="flex justify-end mr-3">
+                <div class="hidden sm:grid sm:grid-cols-2">
+                    <div class="flex justify-end pb-5 sm:pr-10 border-r-2 border-oldGreen-500">
                         <div class="bg-brown-20 rounded-lg drop-shadow-lg p-4 w-6/12">
                             <div class="font-nautigal text-4xl text-oldGreen-500 mb-0">Lorem, ipsum dolor.</div>
                             <img src="./images/photos/timelines1.jpg" class="my-1" alt="">
@@ -285,21 +293,21 @@
                                 consectetur adipisicing elit. Voluptatum natus laborum sunt, quas nesciunt quis!</p>
                         </div>
                     </div>
-                    <div class="flex">
-                        <div class="mr-4"><i class="fa-solid fa-heart text-xl text-oldGreen-500"></i></div>
+                    <div class="flex sm:pl-10 relative">
+                        <div class="absolute top-0 -left-[12px]"><i class="fa-solid fa-heart text-2xl text-oldGreen-500"></i></div>
                         <div>
                             <p class="font-nautigal text-4xl text-oldGreen-500 mb-0">2015</p>
                             <p class="font-belle text-xl font-medium text-oldGreen-500">Januari</p>
                         </div>
                     </div>
                 </div>
-                <div class="sm:hidden grid grid-cols-1 sm:grid-cols-2 gap-2 mb-5">
-                    <div class="sm:text-right ml-8 sm:ml-0 mr-3">
+                <div class="sm:hidden grid grid-cols-1 sm:grid-cols-2">
+                    <div class="sm:text-right ml-8 sm:ml-0">
                         <p class="font-nautigal text-3xl sm:text-4xl text-oldGreen-500 mb-0">2015</p>
                         <p class="font-belle text-base sm:text-xl font-medium text-oldGreen-500">Januari</p>
                     </div>
-                    <div class="flex">
-                        <div class="mr-4"><i class="fa-solid fa-heart text-xl text-oldGreen-500"></i></div>
+                    <div class="flex pl-8 pb-5 relative">
+                        <div class="absolute top-0 -left-[12px]"><i class="fa-solid fa-heart text-2xl text-oldGreen-500"></i></div>
                         <div class="bg-brown-20 rounded-lg drop-shadow-lg p-4 w-full sm:w-6/12">
                             <div class="font-nautigal text-3xl sm:text-4xl text-oldGreen-500 mb-0">Lorem, ipsum dolor.</div>
                             <img src="./images/photos/timelines1.jpg" class="my-1" alt="">
@@ -307,14 +315,14 @@
                         </div>
                     </div>
                 </div>
-                <div class="grid grid-cols-1 sm:grid-cols-2 gap-2 mb-5">
-                    <div class="sm:text-right ml-8 sm:ml-0 mr-3 relative">
+                <div class="grid grid-cols-1 sm:grid-cols-2">
+                    <div class="relative sm:text-right ml-8 sm:ml-0 sm:pr-10 sm:border-r-2 sm:border-oldGreen-500">
                         <p class="font-nautigal text-3xl sm:text-4xl text-oldGreen-500 mb-0">2015</p>
                         <p class="font-belle text-base sm:text-xl font-medium text-oldGreen-500">Januari</p>
                         <img src="images/background/kupu2.png" alt="kupu-kupu" class="absolute top-0 sm:top-32 right-0 sm:right-48 w-[80px] sm:w-[160px]">
                     </div>
-                    <div class="flex">
-                        <div class="mr-4"><i class="fa-solid fa-heart text-xl text-oldGreen-500"></i></div>
+                    <div class="flex pb-5 pl-8 sm:pl-10 relative">
+                        <div class="absolute top-0 -left-[12px]"><i class="fa-solid fa-heart text-2xl text-oldGreen-500"></i></div>
                         <div class="bg-brown-20 rounded-lg drop-shadow-lg p-4 w-full sm:w-6/12">
                             <div class="font-nautigal text-3xl sm:text-4xl text-oldGreen-500 mb-0">Lorem, ipsum dolor.</div>
                             <img src="./images/photos/timelines1.jpg" class="my-1" alt="">
@@ -399,7 +407,7 @@
             <div class="absolute top-0 left-0 w-full h-full sm:h-screen bg-no-repeat bg-cover bg-center" style="background-image: url(./images/background/background.jpg);"></div>             
             <div class="absolute top-0 left-0 w-full h-[50px] sm:h-[100px] bg-no-repeat bg-cover bg-center" style="background-image: url(./images/background/bg-paper-bawah.png);"></div>
             <div class="container max-w-screen-xl px-4 sm:px-0 mx-auto relative">
-                <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 bg-grey-50 rounded-3xl p-6  sm:p-10">
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 bg-grey-50 box-clip-path rounded-3xl p-6  sm:p-10">
                     <div class="js-show-fadeInUp relative mb-6 sm:mb-0">
                         <h1 class="font-nautigal text-5xl sm:text-7xl text-oldRose-400 italic text-center">RSVP</h1>
                         <form action="">
@@ -558,7 +566,7 @@
             <div class="absolute top-0 left-0 w-full h-full sm:h-screen bg-no-repeat bg-cover bg-center -scale-y-100"
                 style="background-image: url(./images/background/background.jpg);"></div>
             <div class="container max-w-screen-xl px-4 sm:px-0 mx-auto relative">
-                <div class="columns-1 bg-grey-50 rounded-3xl p-10 mb-8 sm:mb-20">
+                <div class="columns-1 bg-grey-50 rounded-3xl p-10 mb-8 sm:mb-20 box-clip-path">
                     <div class="text-center">
                         <h1 class="font-nautigal text-5xl sm:text-7xl text-oldRose-400 italic text-center mb-6">
                             Wedding Gifs
@@ -569,7 +577,7 @@
                         <a href="#" class="font-belle text-base sm:text-2xl text-white bg-oldRose-500 py-2 px-4 rounded-3xl">Open</a>
                     </div>
                 </div>
-                <div class="columns-1 bg-grey-50 rounded-3xl p-10 relative">
+                <div class="columns-1 bg-grey-50 box-clip-path rounded-3xl p-10 relative">
                     <div class="text-center">
                         <h1 class="font-nautigal text-5xl sm:text-7xl text-oldRose-400 italic text-center mb-6">
                             Protokol Kesehatan

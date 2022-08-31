@@ -15,5 +15,8 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "description": ""
+  "description": "",
+  "dependencies": {
+    "tailwind-gradient-mask-image": "^1.0.0"
+  }
 }
