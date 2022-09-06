@@ -35,6 +35,18 @@
             -webkit-mask: var(--mask);
                     mask: var(--mask);
         }
+        .mask-wanita {
+            -webkit-mask-image: url('./images/background/mask-wanita.svg');
+            mask-image: url('./images/background/mask-wanita.svg');
+            -webkit-mask-repeat: no-repeat;
+            mask-repeat: no-repeat;
+        }
+        .mask-pria {
+            -webkit-mask-image: url('./images/background/mask-pria.svg');
+            mask-image: url('./images/background/mask-pria.svg');
+            -webkit-mask-repeat: no-repeat;
+            mask-repeat: no-repeat;
+        }
     </style>
 
     <title>Pinangan ID</title>
@@ -131,7 +143,9 @@
             <div class="container max-w-screen-xl px-4 lg:px-0 relative flex justify-center mx-auto ">
                 <div class="grid grid-cols-1 lg:grid-cols-2 gap-2">
                     <div class="js-show-fadeInLeft left">
-                        <img src="./images/photos/mempelai-wanita.jpg" class="rounded-full w-6/12 md:w-5/12 lg:w-8/12 mx-auto lg:ml-auto lg:mr-10" alt="Mempelai Wanita">
+                        <div class="mask-wanita">
+                            <img src="./images/photos/mempelai-wanita.jpg" class="" alt="Mempelai Wanita">
+                        </div>
                     </div>
                     <div class="js-show-fadeInRight right font-quicksand font-semibold text-oldGreen-500 text-base md:text-xl lg:text-2xl flex items-center mb-6 lg:mb-0">
                         <div class="text-center mx-auto lg:ml-28">
@@ -149,8 +163,9 @@
                         </div>
                     </div>
                     <div class="js-show-fadeInLeft left lg:hidden">
-                        <img src="./images/photos/mempelai-pria.jpg" class="rounded-full w-6/12 md:w-5/12 lg:w-8/12 mx-auto lg:ml-auto lg:mr-10"
-                            alt="Mempelai Pria">
+                        <div class="mask-pria">
+                            <img src="./images/photos/mempelai-pria.jpg" alt="Mempelai Pria">
+                        </div>
                     </div>
                     <div class="js-show-fadeInRight right font-quicksand font-semibold text-oldGreen-500 text-base md:text-xl lg:text-2xl flex items-center justify-end">
                         <div class="text-center mx-auto lg:mr-28">
@@ -168,8 +183,9 @@
                         </div>
                     </div>
                     <div class="js-show-fadeInLeft left hidden lg:block">
-                        <img src="./images/photos/mempelai-pria.jpg" class="rounded-full w-8/12 mr-auto ml-10"
-                            alt="Mempelai Pria">
+                        <div class="mask-pria">
+                            <img src="./images/photos/mempelai-pria.jpg" class="" alt="Mempelai Pria">
+                        </div>
                     </div>
                 </div>
             </div>
