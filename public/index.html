@@ -30,6 +30,11 @@
             -webkit-mask: var(--mask);
                     mask: var(--mask);
         }
+        .box-clip-path-sm {
+            --mask: radial-gradient(40px at 40px 40px,#0000 98%,#000) -40px -40px;
+            -webkit-mask: var(--mask);
+                    mask: var(--mask);
+        }
     </style>
 
     <title>Pinangan ID</title>
@@ -37,27 +42,27 @@
 
 <body class="">
 
-    <section class="cover-undangan w-full h-screen flex items-center justify-center relative overflow-hidden" id="section-home">
-        <div class="absolute top-0 left-0 w-full h-screen bg-no-repeat bg-cover bg-center"
+    <section class="cover-undangan w-full min-h-screen lg:py-10 flex items-center justify-center relative overflow-hidden" id="section-home">
+        <div class="absolute top-0 left-0 w-full h-full lg:py-10 bg-no-repeat bg-cover bg-center"
             style="background-image: url(./images/background/background.jpg);"></div>
         <img src="images/background/header-1.png" alt="bunga"
-            class="animate-[wiggle_10s_ease-in-out_infinite] absolute -bottom-32 sm:-bottom-[150px] -left-40 sm:-left-[200px] w-[300px] sm:w-[600px]">
+            class="animate-[wiggle_10s_ease-in-out_infinite] absolute -bottom-32 lg:-bottom-[150px] -left-40 lg:-left-[200px] w-[300px] md:w-[400px] lg:w-[600px]">
         <img src="images/background/header-2.png" alt="bunga"
-            class="animate-[wiggle_10s_ease-in-out_infinite] absolute -bottom-[70px] sm:-bottom-[150px] -right-[70px] sm:-right-[150px] w-[200px] sm:w-[500px]">
+            class="animate-[wiggle_10s_ease-in-out_infinite] absolute -bottom-[70px] lg:-bottom-[150px] -right-[70px] lg:-right-[150px] w-[200px] md:w-[300px] lg:w-[500px]">
         <img src="images/background/kupu1.png" alt="kupu-kupu"
-            class="animate-[wiggle_10s_ease-in-out_infinite] absolute top-[80px] sm:top-1/4 sm:-translate-y-1/4 left-2/4 -translate-x-2/4 sm:left-1/4 sm:-translate-x-1/4 w-[160px] sm:w-[240px]">
+            class="animate-[wiggle_10s_ease-in-out_infinite] absolute top-0 md:top-[50px] lg:top-1/4 lg:-translate-y-1/4 left-1/4 md:left-[300px] md:translate-x-0 lg:left-1/4 lg:-translate-x-1/4 w-[160px] lg:w-[240px]">
         <div class="container max-w-screen-xl mx-auto relative">
-            <div class="text-center sm:ml-auto sm:mr-10 sm:w-8/12">
-                <div class="font-belle text-mobile sm:text-2xl text-oldGreen-500 mb-14 sm:mb-10 font-medium italic">
+            <div class="text-center lg:ml-auto lg:mr-10 lg:w-8/12">
+                <div class="font-belle text-mobile md:text-2xl text-oldGreen-500 mb-14 md:mb-10 font-medium italic">
                     THE WEDDING OF
                 </div>
-                <h1 class="font-nautigal text-6xl sm:text-[200px] text-oldRose-500 italic mb-14 sm:mt-28 sm:mb-14">
+                <h1 class="font-nautigal text-8xl md:text-[180px] lg:text-[200px] text-oldRose-500 italic mb-14 md:mt-10 lg:mt-28 md:mb-14">
                     Kiara & Kofu
                 </h1>
-                <div class="font-belle text-mobile sm:text-2xl text-oldGreen-500 mb-6 sm:mb-10 font-medium">
+                <div class="font-belle text-mobile md:text-2xl text-oldGreen-500 mb-6 md:mb-10 font-medium">
                     29 FEBRUARY 2021
                 </div>
-                <a href="#bukaUndangan" id="btnBukaUndangan" onclick="bukaUndangan()" class="font-belle text-sm sm:text-xl text-cream-50 bg-oldGreen-100 py-3 px-6 rounded-xl border border-black-100 mb-20">
+                <a href="#bukaUndangan" id="btnBukaUndangan" onclick="bukaUndangan()" class="font-belle text-sm md:text-xl text-cream-50 bg-oldGreen-100 py-3 px-6 rounded-xl border border-black-100 mb-20">
                     <i class="fa-solid fa-envelope mr-2"></i> Buka Undangan
                 </a>
             </div>
@@ -67,23 +72,23 @@
     
 
     <div class="isi-undangan hidden" id="bukaUndangan">
-        <section class="h-[480px] sm:h-screen flex items-center justify-center relative">
-            <div class="absolute top-0 left-0 w-full h-[480px] sm:h-screen bg-no-repeat bg-cover bg-center -scale-y-100" style="background-image: url(./images/background/background.jpg);"></div>
-            <div class="container max-w-screen-xl px-4 sm:px-0 relative flex justify-center mx-auto ">
-                <div class="columns-1 sm:w-3/4">
+        <section class="h-[480px] md:h-screen lg:py-10 flex items-center justify-center relative">
+            <div class="absolute top-0 left-0 w-full h-[480px] md:h-screen bg-no-repeat bg-cover bg-center -scale-y-100" style="background-image: url(./images/background/background.jpg);"></div>
+            <div class="container max-w-screen-xl px-4 md:px-0 relative flex justify-center mx-auto ">
+                <div class="columns-1 md:w-3/4">
                     <div class="text-center relative">
-                        <h1 class="js-show-fadeInUp text-center font-nautigal text-5xl sm:text-7xl md:text-8xl text-oldRose-400 mb-10 sm:mb-20 italic">
-                            Bismillahirrahmanirrahiim</h1>
-                        <p class="js-show-fadeInDown font-belle text-base sm:text-2xl text-oldGreen-500 mb-5">
+                        <h1 class="js-show-fadeInUp text-center font-nautigal text-5xl md:text-7xl lg:text-8xl text-oldRose-400 mb-10 md:mb-20 italic">
+                            Bimdillahirrahmanirrahiim</h1>
+                        <p class="js-show-fadeInDown font-belle text-base md:text-2xl text-oldGreen-500 mb-5">
                             "Dan di antara tanda-tanda kekuasaan-Nya ialah Dia menciptakan untukmu pasangan-pasangan dari
-                            jenismu sendiri, supaya kamu cenderung dan merasa tenteram kepadanya, dan dijadikan-Nya
+                            jenimdu sendiri, supaya kamu cenderung dan merasa tenteram kepadanya, dan dijadikan-Nya
                             diantaramu rasa kasih dan sayang. Sesungguhnya pada yang demikian itu benar-benar terdapat
                             tanda-tanda bagi kaum yang berfikir."
                         </p>
-                        <p class="js-show-fadeInDown font-belle text-base sm:text-2xl text-oldGreen-500 font-medium">
+                        <p class="js-show-fadeInDown font-belle text-base md:text-2xl text-oldGreen-500 font-medium">
                             (QS Ar-Rum : 21)
                         </p>
-                        <img src="images/background/kupu2.png" alt="kupu-kupu" class="animate-[wiggle_6s_ease-in-out_infinite] absolute -top-20 sm:top-10 -right-0 sm:-right-20 w-[100px] sm:w-[200px] -scale-x-100">
+                        <img src="images/background/kupu2.png" alt="kupu-kupu" class="animate-[wiggle_6s_ease-in-out_infinite] absolute -top-20 md:top-10 -right-0 md:-right-20 w-[100px] md:w-[140px] lg:w-[200px] -scale-x-100">
                     </div>
                 </div>
             </div>
@@ -91,27 +96,27 @@
     </div>
 
     <div class="isi-undangan hidden">
-        <section class="h-[480px] sm:h-screen flex items-center justify-center relative">
-            <div class="absolute top-0 left-0 w-full h-[480px] sm:h-screen bg-no-repeat bg-cover bg-center"
+        <section class="h-[480px] md:h-full lg:min-h-screen lg:py-10 flex items-center justify-center relative">
+            <div class="absolute top-0 left-0 w-full h-[480px] md:h-full bg-no-repeat bg-cover bg-center"
                 style="background-image: url(./images/background/background.jpg);"></div>
             <div class="container max-w-screen-xl px-4 sm:px-0 mx-auto relative">
                 <div class="columns-1">
                     <div class="text-center relative">
                         <img src="./images/background/bunga-kabar.png" class="js-show-fadeInUp w-2/4 sm:w-72 mb-8 sm:mb-14 mx-auto" alt="bunga">
-                        <p class="js-show-fadeInDown font-belle text-base sm:text-2xl text-oldGreen-500 mb-16 sm:mb-64">
+                        <p class="js-show-fadeInDown font-belle text-base sm:text-2xl text-oldGreen-500 mb-16 md:mb-48 lg:mb-64">
                             Assalamu'alaikum Warahmatullahi Wabarakatuh. <br>
                             Dengan segala kerendahan hati dan dengan ucapan syukur atas karunia Allah subhanahu Wata'ala,
                             <br>
                             kami hendak menyampaikan kabar bahagia atas pernikahaan putra putri kami:
                         </p>
-                        <img src="images/background/kupu2.png" alt="kupu-kupu" class="animate-[wiggle_6s_ease-in-out_infinite] absolute top-20 sm:top-32 -right-0 sm:right-48 w-[100px] sm:w-[200px]">
+                        <img src="images/background/kupu2.png" alt="kupu-kupu" class="animate-[wiggle_6s_ease-in-out_infinite] absolute top-20 md:top-32 -right-0 md:right-32 lg:right-48 w-[100px] md:w-[140px] lg:w-[200px]">
 
-                        <div class="relative js-show-zoomIn" id="section-mempelai">
+                        <div class="relative js-show-zoomIn md:mb-20" id="section-mempelai">
                             <img src="./images/background/bg-text-1.png" class="w-9/12 sm:w-6/12 mx-auto" alt="">
                             <h1 class="absolute top-2/4 -translate-y-2/4 left-2/4 -translate-x-2/4 font-nautigal text-5xl sm:text-7xl text-oldRose-400 italic">
                                 Mempelai
                             </h1>
-                            <img src="images/background/kupu3.png" alt="kupu-kupu" class="animate-[wiggle_6s_ease-in-out_infinite] absolute top-2 sm:top-6 -left-0 sm:left-0 w-[50px] sm:w-[100px]">
+                            <img src="images/background/kupu3.png" alt="kupu-kupu" class="animate-[wiggle_6s_ease-in-out_infinite] absolute top-2 lg:top-6 -left-0 md:left-[80px] lg:left-0 w-[50px] md:w-[70px] lg:w-[100px]">
                         </div>
                     </div>
                 </div>
@@ -120,49 +125,49 @@
     </div>
 
     <div class="isi-undangan hidden">
-        <section class="h-full sm:h-screen flex items-center justify-center relative py-6 sm:py-0">
-            <div class="absolute top-0 left-0 w-full h-full sm:h-screen bg-no-repeat bg-cover bg-center -scale-y-100"
+        <section class="h-full lg:min-h-screen flex items-center justify-center relative py-6 lg:py-10">
+            <div class="absolute top-0 left-0 w-full h-full bg-no-repeat bg-cover bg-center -scale-y-100"
                 style="background-image: url(./images/background/background.jpg);"></div>
-            <div class="container max-w-screen-xl px-4 sm:px-0 relative flex justify-center mx-auto ">
-                <div class="grid grid-cols-1 sm:grid-cols-2 gap-2">
+            <div class="container max-w-screen-xl px-4 lg:px-0 relative flex justify-center mx-auto ">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-2">
                     <div class="js-show-fadeInLeft left">
-                        <img src="./images/photos/mempelai-wanita.jpg" class="rounded-full w-6/12 sm:w-8/12 mx-auto sm:ml-auto sm:mr-10" alt="Mempelai Wanita">
+                        <img src="./images/photos/mempelai-wanita.jpg" class="rounded-full w-6/12 md:w-5/12 lg:w-8/12 mx-auto lg:ml-auto lg:mr-10" alt="Mempelai Wanita">
                     </div>
-                    <div class="js-show-fadeInRight right font-quicksand font-semibold text-oldGreen-500 text-base sm:text-2xl flex items-center mb-6 sm:mb-0">
-                        <div class="text-center mx-auto sm:ml-28">
+                    <div class="js-show-fadeInRight right font-quicksand font-semibold text-oldGreen-500 text-base md:text-xl lg:text-2xl flex items-center mb-6 lg:mb-0">
+                        <div class="text-center mx-auto lg:ml-28">
                             <h6>Kiara Maudy, S.T</h6>
-                            <div class="h-0.5 sm:h-1 bg-white my-3 sm:my-6"></div>
-                            <div class="sm:mb-3">
+                            <div class="h-0.5 lg:h-1 bg-white my-3 lg:my-6"></div>
+                            <div class="lg:mb-3">
                                 Putri dari: <br>
                                 dr. Dirgantara, Sp.A <br>
                                 & <br>
                                 Ibu Zuhriyat, S.E
                             </div>
-                            <a href="#" target="_blank" class="text-2xl sm:text-4xl">
+                            <a href="#" target="_blank" class="text-2xl lg:text-4xl">
                                 <i class="fa-brands fa-instagram"></i>
                             </a>
                         </div>
                     </div>
-                    <div class="js-show-fadeInLeft left sm:hidden">
-                        <img src="./images/photos/mempelai-pria.jpg" class="rounded-full w-6/12 sm:w-8/12 mx-auto sm:ml-auto sm:mr-10"
+                    <div class="js-show-fadeInLeft left lg:hidden">
+                        <img src="./images/photos/mempelai-pria.jpg" class="rounded-full w-6/12 md:w-5/12 lg:w-8/12 mx-auto lg:ml-auto lg:mr-10"
                             alt="Mempelai Pria">
                     </div>
-                    <div class="js-show-fadeInRight right font-quicksand font-semibold text-oldGreen-500 text-base sm:text-2xl flex items-center justify-end">
-                        <div class="text-center mx-auto sm:mr-28">
+                    <div class="js-show-fadeInRight right font-quicksand font-semibold text-oldGreen-500 text-base md:text-xl lg:text-2xl flex items-center justify-end">
+                        <div class="text-center mx-auto lg:mr-28">
                             <h6>Kofu Sanjaya, S.T</h6>
-                            <div class="h-0.5 sm:h-1 bg-white my-3 sm:my-6"></div>
-                            <div class="sm:mb-3">
+                            <div class="h-0.5 lg:h-1 bg-white my-3 lg:my-6"></div>
+                            <div class="lg:mb-3">
                                 Putra dari: <br>
                                 Bapak Wardiyanta, S.T <br>
                                 & <br>
                                 Ibu Dahliana, S.I
                             </div>
-                            <a href="#" target="_blank" class="text-2xl sm:text-4xl">
+                            <a href="#" target="_blank" class="text-2xl lg:text-4xl">
                                 <i class="fa-brands fa-instagram"></i>
                             </a>
                         </div>
                     </div>
-                    <div class="js-show-fadeInLeft left hidden sm:block">
+                    <div class="js-show-fadeInLeft left hidden lg:block">
                         <img src="./images/photos/mempelai-pria.jpg" class="rounded-full w-8/12 mr-auto ml-10"
                             alt="Mempelai Pria">
                     </div>
@@ -172,29 +177,29 @@
     </div>
 
     <div class="isi-undangan hidden">
-        <section class="h-screen flex items-center justify-center relative overflow-hidden" id="section-savedate">
-            <div class="absolute top-0 left-0 w-full h-screen bg-no-repeat bg-cover bg-center" style="background-image: url(./images/background/background.jpg);"></div>
-            <div class="container max-w-screen-xl px-4 sm:px-0 mx-auto relative">
+        <section class="h-full lg:min-h-screen py-10 flex items-center justify-center relative overflow-hidden" id="section-savedate">
+            <div class="absolute top-0 left-0 w-full h-full bg-no-repeat bg-cover bg-center" style="background-image: url(./images/background/background.jpg);"></div>
+            <div class="container max-w-screen-xl px-4 lg:px-0 mx-auto relative">
                 <div class="columns-1">
-                    <div class="text-center bg-grey-50 box-clip-path rounded-3xl p-10 sm:p-20">
-                        <img src="images/border/border-love-1.png" class="js-show-zoomIn w-full sm:w-5/12 mx-auto mb-1"
+                    <div class="text-center bg-grey-50 box-clip-path-sm md:box-clip-path rounded-3xl p-10 lg:p-20">
+                        <img src="images/border/border-love-1.png" class="js-show-zoomIn w-full lg:w-5/12 mx-auto mb-1"
                             alt="border"
                             style="filter: invert(65%) sepia(8%) saturate(1357%) hue-rotate(349deg) brightness(88%) contrast(90%);">
-                        <div class="columns-1 sm:columns-2 mt-10">
-                            <div class="js-show-fadeIn mb-8 sm:mb-0">
-                                <h1 class="font-nautigal text-5xl sm:text-7xl text-oldGreen-500 italic mb-2 sm:mb-5">
+                        <div class="columns-1 lg:columns-2 mt-10">
+                            <div class="js-show-fadeIn mb-8 lg:mb-0">
+                                <h1 class="font-nautigal text-5xl lg:text-7xl text-oldGreen-500 italic mb-2 lg:mb-5">
                                     Akad Nikah
                                 </h1>
-                                <p class="font-belle text-base sm:text-xl text-oldGreen-500 mb-5 font-medium sm:leading-10">
+                                <p class="font-belle text-base lg:text-xl text-oldGreen-500 mb-5 font-medium lg:leading-10">
                                     Minggu, 04 September 2022 <br>
                                     08:00 WIB
                                 </p>
                             </div>
                             <div class="js-show-fadeIn">
-                                <h1 class="font-nautigal text-5xl sm:text-7xl text-oldGreen-500 italic mb-2 sm:mb-5">
+                                <h1 class="font-nautigal text-5xl lg:text-7xl text-oldGreen-500 italic mb-2 lg:mb-5">
                                     Resepsi
                                 </h1>
-                                <p class="font-belle text-base sm:text-xl text-oldGreen-500 mb-5 font-medium sm:leading-10">
+                                <p class="font-belle text-base lg:text-xl text-oldGreen-500 mb-5 font-medium lg:leading-10">
                                     Minggu, 04 September 2022 <br>
                                     11:00 WIB
                                 </p>
@@ -203,97 +208,97 @@
                         <img src="images/border/border-love-1.png" class="js-show-zoomIn w-5/12 mx-auto mb-1" alt="border"
                             style="filter: invert(65%) sepia(8%) saturate(1357%) hue-rotate(349deg) brightness(88%) contrast(90%);">
                         <div class="js-show-fadeIn mt-6 mb-10">
-                            <h1 class="font-nautigal  text-5xl sm:text-7xl text-oldGreen-500 italic mb-2 sm:mb-5">
+                            <h1 class="font-nautigal  text-5xl lg:text-7xl text-oldGreen-500 italic mb-2 lg:mb-5">
                                 Lokasi
                             </h1>
-                            <p class="font-belle text-base sm:text-xl text-oldGreen-500 mb-5 font-medium ">
+                            <p class="font-belle text-base lg:text-xl text-oldGreen-500 mb-5 font-medium ">
                                 Kediaman Mempelai Putri <br> x
                                 Jalan Boulevard Raya RT 02 RW 01 Jakarta Selatan
                             </p>
                         </div>
                         <a href="https://goo.gl/maps/JogxULPifontaj1D9" target="_blank"
-                            class="font-quicksand text-sm sm:text-base text-white bg-grey-100 py-1 sm:py-2.5 px-5 sm:px-7 rounded-lg border-2 border-grey-100"><i
+                            class="font-quicksand text-sm lg:text-base text-white bg-grey-100 py-1 lg:py-2.5 px-5 lg:px-7 rounded-lg border-2 border-grey-100"><i
                                 class="fa-solid fa-location-dot mr-2"></i> Lokasi</a>
                     </div>
                 </div>
             </div>
             <img src="images/background/buket-bunga-1.png" alt="bunga"
-                class="js-show-fadeInLeft absolute top-0 -left-10 sm:-left-20 w-[160px] sm:w-[400px]">            
+                class="animate-[wiggle_6s_ease-in-out_infinite] absolute top-0 -left-10 lg:-left-20 w-[160px] md:w-[250px] lg:w-[400px]">            
             <img src="images/background/buket-bunga-2.png" alt="bunga"
-                class="js-show-fadeInLeft absolute -bottom-[100px] sm:-bottom-[200px] -right-[70px] sm:-right-[140px] w-[180px] sm:w-[400px]">
+                class="animate-[wiggle_6s_ease-in-out_infinite] absolute -bottom-[100px] lg:-bottom-[200px] -right-[70px] lg:-right-[140px] w-[180px] md:w-[250px] lg:w-[400px]">
         </section>
     </div>
 
     <div class="isi-undangan hidden">
-        <section class="js-show-fadeIn w-full h-[480px] sm:h-[750px] relative overflow-hidden">
-            <div class="absolute top-0 left-0 w-full h-[480px] sm:h-[750px] object-cover bg-no-repeat bg-cover bg-center bg-fixed"
+        <section class="js-show-fadeIn w-full h-[480px] md:h-[750px] relative overflow-hidden">
+            <div class="absolute top-0 left-0 w-full h-[480px] md:h-[750px] object-cover bg-no-repeat bg-cover bg-center"
                 style="background-image: url('images/background/bg-countdown.jpg');">
             </div>
             <div class="container max-w-screen-xl relative flex justify-center items-end mx-auto h-full">
                 <div class="columns-1 pb-10">
                     <div class="js-show-fadeInUp flex">
-                        <div class="mx-2 sm:mx-3 bg-brown-100 py-2 sm:py-5 w-16 sm:w-28 text-center rounded-full">
-                            <div class="font-quicksand text-white text-2xl sm:text-5xl" id="days">00</div>
-                            <div class="font-quicksand text-xs sm:text-base text-white">Days</div>
+                        <div class="mx-2 md:mx-3 bg-brown-100 py-2 md:py-5 w-16 md:w-28 text-center rounded-full">
+                            <div class="font-quicksand text-white text-2xl md:text-5xl" id="days">00</div>
+                            <div class="font-quicksand text-xs md:text-base text-white">Days</div>
                         </div>
-                        <div class="mx-2 sm:mx-3 bg-brown-100 py-2 sm:py-5 w-16 sm:w-28 text-center rounded-full">
-                            <div class="font-quicksand text-white text-2xl sm:text-5xl" id="hours">00</div>
-                            <div class="font-quicksand text-xs sm:text-base text-white">Hours</div>
+                        <div class="mx-2 md:mx-3 bg-brown-100 py-2 md:py-5 w-16 md:w-28 text-center rounded-full">
+                            <div class="font-quicksand text-white text-2xl md:text-5xl" id="hours">00</div>
+                            <div class="font-quicksand text-xs md:text-base text-white">Hours</div>
                         </div>
-                        <div class="mx-2 sm:mx-3 bg-brown-100 py-2 sm:py-5 w-16 sm:w-28 text-center rounded-full">
-                            <div class="font-quicksand text-white text-2xl sm:text-5xl" id="minutes">00</div>
-                            <div class="font-quicksand text-xs sm:text-base text-white">Minutes</div>
+                        <div class="mx-2 md:mx-3 bg-brown-100 py-2 md:py-5 w-16 md:w-28 text-center rounded-full">
+                            <div class="font-quicksand text-white text-2xl md:text-5xl" id="minutes">00</div>
+                            <div class="font-quicksand text-xs md:text-base text-white">Minutes</div>
                         </div>
-                        <div class="mx-2 sm:mx-3 bg-brown-100 py-2 sm:py-5 w-16 sm:w-28 text-center rounded-full">
-                            <div class="font-quicksand text-white text-2xl sm:text-5xl" id="seconds">00</div>
-                            <div class="font-quicksand text-xs sm:text-base text-white">Seconds</div>
+                        <div class="mx-2 md:mx-3 bg-brown-100 py-2 md:py-5 w-16 md:w-28 text-center rounded-full">
+                            <div class="font-quicksand text-white text-2xl md:text-5xl" id="seconds">00</div>
+                            <div class="font-quicksand text-xs md:text-base text-white">Seconds</div>
                         </div>
                     </div>
                 </div>
             </div>
             <img src="images/background/buket-bunga-2.png" alt="bunga"
-                class="js-show-fadeInLeft absolute -top-[145px] sm:-top-[346px] -right-[70px] sm:-right-[140px] w-[180px] sm:w-[400px]">
+                class="animate-[wiggle_6s_ease-in-out_infinite] absolute -top-[145px] md:-top-[245px] lg:-top-[346px] -right-[70px] lg:-right-[140px] w-[180px] md:w-[250px] lg:w-[400px]">
         </section>
     </div>
 
     <div class="isi-undangan hidden">
-        <section class="flex h-full items-center justify-center relative py-14 sm:py-32">
+        <section class="flex h-full items-center justify-center relative py-14 lg:py-32">
             <div class="absolute top-0 left-0 w-full h-full bg-no-repeat bg-cover bg-center"
                 style="background-image: url(./images/background/background.jpg);"></div>
-            <div class="container max-w-screen-xl px-4 sm:px-0 mx-auto relative">
-                <div class="columns-1 mb-5 sm:mb-12">
+            <div class="container max-w-screen-xl px-4 lg:px-0 mx-auto relative">
+                <div class="columns-1 mb-5 lg:mb-12">
                     <div class="js-show-zoomIn relative text-center">
-                        <img src="./images/background/bg-text-1.png" class="w-9/12 sm:w-6/12 mx-auto" alt="">
+                        <img src="./images/background/bg-text-1.png" class="w-9/12 lg:w-6/12 mx-auto" alt="">
                         <h1
-                            class="absolute top-2/4 -translate-y-2/4 left-2/4 -translate-x-2/4 font-nautigal text-4xl sm:text-7xl text-oldRose-400 italic">
+                            class="absolute top-2/4 -translate-y-2/4 left-2/4 -translate-x-2/4 font-nautigal text-4xl md:text-6xl lg:text-7xl text-oldRose-400 italic">
                             Our Story to Tell</h1>
                     </div>
                 </div>
-                <div class="js-show-fadeInUp grid grid-cols-1 sm:grid-cols-2">
-                    <div class="sm:text-right ml-8 sm:ml-0 relative sm:pr-10 sm:border-r-2 sm:border-oldGreen-500">
-                        <p class="font-nautigal text-3xl sm:text-4xl text-oldGreen-500 mb-0">2015</p>
-                        <p class="font-belle text-base sm:text-xl font-medium text-oldGreen-500">Januari</p>
-                        <img src="images/background/kupu2.png" alt="kupu-kupu" class="animate-[wiggle_6s_ease-in-out_infinite] absolute top-0 sm:top-32 right-0 sm:right-48 w-[80px] sm:w-[160px]">
+                <div class="js-show-fadeInUp grid grid-cols-1 md:grid-cols-2">
+                    <div class="md:text-right ml-8 md:ml-0 relative md:pr-10 md:border-r-2 md:border-oldGreen-500">
+                        <p class="font-nautigal text-3xl md:text-4xl text-oldGreen-500 mb-0">2015</p>
+                        <p class="font-belle text-base md:text-xl font-medium text-oldGreen-500">Januari</p>
+                        <img src="images/background/kupu2.png" alt="kupu-kupu" class="animate-[wiggle_6s_ease-in-out_infinite] absolute top-0 md:top-32 right-0 md:right-48 w-[80px] md:w-[160px]">
                     </div>
-                    <div class="flex pl-8 sm:pl-10 pb-5 relative">
+                    <div class="flex pl-8 md:pl-10 pb-5 relative">
                         <div class="absolute -top-[8px] -left-[12px]"><i class="fa-solid fa-heart text-2xl text-oldGreen-500"></i></div>
-                        <div class="bg-brown-20 rounded-lg drop-shadow-lg p-4 w-full sm:w-6/12">
-                            <div class="font-nautigal text-3xl sm:text-4xl text-oldGreen-500 mb-0">Lorem, ipsum dolor.</div>
+                        <div class="bg-brown-20 rounded-lg drop-shadow-lg p-4 w-full lg:w-6/12">
+                            <div class="font-nautigal text-3xl md:text-4xl text-oldGreen-500 mb-0">Lorem, ipsum dolor.</div>
                             <img src="./images/photos/timelines1.jpg" class="my-1" alt="">
-                            <p class="font-belle text-sm sm:text-lg font-medium text-oldGreen-500">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum natus laborum sunt, quas nesciunt quis!</p>
+                            <p class="font-belle text-sm md:text-lg font-medium text-oldGreen-500">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum natus laborum sunt, quas nesciunt quis!</p>
                         </div>
                     </div>
                 </div>
-                <div class="js-show-fadeInUp hidden sm:grid sm:grid-cols-2">
-                    <div class="flex justify-end pb-5 sm:pr-10 border-r-2 border-oldGreen-500">
-                        <div class="bg-brown-20 rounded-lg drop-shadow-lg p-4 w-6/12">
+                <div class="js-show-fadeInUp hidden md:grid md:grid-cols-2">
+                    <div class="flex justify-end pb-5 md:pr-10 border-r-2 border-oldGreen-500">
+                        <div class="bg-brown-20 rounded-lg drop-shadow-lg p-4 w-full lg:w-6/12">
                             <div class="font-nautigal text-4xl text-oldGreen-500 mb-0">Lorem, ipsum dolor.</div>
                             <img src="./images/photos/timelines1.jpg" class="my-1" alt="">
                             <p class="font-belle text-lg font-medium text-oldGreen-500">Lorem ipsum dolor, sit amet
                                 consectetur adipisicing elit. Voluptatum natus laborum sunt, quas nesciunt quis!</p>
                         </div>
                     </div>
-                    <div class="flex sm:pl-10 relative">
+                    <div class="flex md:pl-10 relative">
                         <div class="absolute top-0 -left-[12px]"><i class="fa-solid fa-heart text-2xl text-oldGreen-500"></i></div>
                         <div>
                             <p class="font-nautigal text-4xl text-oldGreen-500 mb-0">2015</p>
@@ -301,97 +306,97 @@
                         </div>
                     </div>
                 </div>
-                <div class="js-show-fadeInUp sm:hidden grid grid-cols-1 sm:grid-cols-2">
-                    <div class="sm:text-right ml-8 sm:ml-0">
-                        <p class="font-nautigal text-3xl sm:text-4xl text-oldGreen-500 mb-0">2015</p>
-                        <p class="font-belle text-base sm:text-xl font-medium text-oldGreen-500">Januari</p>
+                <div class="js-show-fadeInUp md:hidden grid grid-cols-1 md:grid-cols-2">
+                    <div class="md:text-right ml-8 md:ml-0">
+                        <p class="font-nautigal text-3xl md:text-4xl text-oldGreen-500 mb-0">2015</p>
+                        <p class="font-belle text-base md:text-xl font-medium text-oldGreen-500">Januari</p>
                     </div>
                     <div class="flex pl-8 pb-5 relative">
                         <div class="absolute top-0 -left-[12px]"><i class="fa-solid fa-heart text-2xl text-oldGreen-500"></i></div>
-                        <div class="bg-brown-20 rounded-lg drop-shadow-lg p-4 w-full sm:w-6/12">
-                            <div class="font-nautigal text-3xl sm:text-4xl text-oldGreen-500 mb-0">Lorem, ipsum dolor.</div>
+                        <div class="bg-brown-20 rounded-lg drop-shadow-lg p-4 w-full lg:w-6/12">
+                            <div class="font-nautigal text-3xl md:text-4xl text-oldGreen-500 mb-0">Lorem, ipsum dolor.</div>
                             <img src="./images/photos/timelines1.jpg" class="my-1" alt="">
-                            <p class="font-belle text-sm sm:text-lg font-medium text-oldGreen-500">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum natus laborum sunt, quas nesciunt quis!</p>
+                            <p class="font-belle text-sm md:text-lg font-medium text-oldGreen-500">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum natus laborum sunt, quas nesciunt quis!</p>
                         </div>
                     </div>
                 </div>
-                <div class="js-show-fadeInUp grid grid-cols-1 sm:grid-cols-2">
-                    <div class="relative sm:text-right ml-8 sm:ml-0 sm:pr-10 sm:border-r-2 sm:border-oldGreen-500">
-                        <p class="font-nautigal text-3xl sm:text-4xl text-oldGreen-500 mb-0">2015</p>
-                        <p class="font-belle text-base sm:text-xl font-medium text-oldGreen-500">Januari</p>
-                        <img src="images/background/kupu2.png" alt="kupu-kupu" class="animate-[wiggle_6s_ease-in-out_infinite] absolute top-0 sm:top-32 right-0 sm:right-48 w-[80px] sm:w-[160px]">
+                <div class="js-show-fadeInUp grid grid-cols-1 md:grid-cols-2">
+                    <div class="relative md:text-right ml-8 md:ml-0 md:pr-10 md:border-r-2 md:border-oldGreen-500">
+                        <p class="font-nautigal text-3xl md:text-4xl text-oldGreen-500 mb-0">2015</p>
+                        <p class="font-belle text-base md:text-xl font-medium text-oldGreen-500">Januari</p>
+                        <img src="images/background/kupu2.png" alt="kupu-kupu" class="animate-[wiggle_6s_ease-in-out_infinite] absolute top-0 md:top-32 right-0 md:right-48 w-[80px] md:w-[160px]">
                     </div>
-                    <div class="flex pb-5 pl-8 sm:pl-10 relative">
+                    <div class="flex pb-5 pl-8 md:pl-10 relative">
                         <div class="absolute top-0 -left-[12px]"><i class="fa-solid fa-heart text-2xl text-oldGreen-500"></i></div>
-                        <div class="bg-brown-20 rounded-lg drop-shadow-lg p-4 w-full sm:w-6/12">
-                            <div class="font-nautigal text-3xl sm:text-4xl text-oldGreen-500 mb-0">Lorem, ipsum dolor.</div>
+                        <div class="bg-brown-20 rounded-lg drop-shadow-lg p-4 w-full lg:w-6/12">
+                            <div class="font-nautigal text-3xl md:text-4xl text-oldGreen-500 mb-0">Lorem, ipsum dolor.</div>
                             <img src="./images/photos/timelines1.jpg" class="my-1" alt="">
-                            <p class="font-belle text-sm sm:text-lg font-medium text-oldGreen-500">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum natus laborum sunt, quas nesciunt quis!</p>
+                            <p class="font-belle text-sm md:text-lg font-medium text-oldGreen-500">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum natus laborum sunt, quas nesciunt quis!</p>
                         </div>
                     </div>
                 </div>
             </div>            
             <img src="images/background/buket-bunga-1.png" alt="bunga"
-                class="js-show-fadeInLeft absolute -bottom-[72px] sm:-bottom-[200px] -left-10 sm:-left-20 w-[160px] sm:w-[400px]">
+                class="animate-[wiggle_6s_ease-in-out_infinite] absolute -bottom-[72px] lg:-bottom-[200px] -left-10 lg:-left-20 w-[160px] md:w-[200px] lg:w-[400px]">
         </section>
     </div>
 
     <div class="isi-undangan hidden">
-        <section class="h-full sm:h-screen flex items-center justify-center relative py-10 sm:py-36" id="section-gallery">
-            <div class="absolute top-0 left-0 w-full h-full sm:h-screen bg-no-repeat bg-cover bg-center" style="background-image: url(./images/background/background.jpg);"></div>
-            <div class="container max-w-screen-xl px-4 sm:px-0 mx-auto relative">
+        <section class="h-full lg:min-h-screen flex items-center justify-center relative py-10 lg:py-36" id="section-gallery">
+            <div class="absolute top-0 left-0 w-full h-full bg-no-repeat bg-cover bg-center" style="background-image: url(./images/background/background.jpg);"></div>
+            <div class="container max-w-screen-xl px-4 lg:px-0 mx-auto relative">
                 <div class="columns-1">
-                    <div class="text-center mb-6 sm:mb-14">
-                        <h1 class="js-show-fadeInUp font-nautigal text-5xl sm:text-7xl text-oldRose-400 italic">
+                    <div class="text-center mb-6 lg:mb-14">
+                        <h1 class="js-show-fadeInUp font-nautigal text-5xl md:text-6xl lg:text-7xl text-oldRose-400 italic">
                             Pre-wedding Gallery
                         </h1>
                     </div>
                 </div>
-                <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 pb-10" id="lightgallery">
+                <div class="grid grid-cols-2 lg:grid-cols-4 gap-4 pb-10" id="lightgallery">
                     <a href="images/gallery/galeri1.jpeg" data-sub-html="Foto Gallery 1"
-                        class="js-show-zoomIn js-show-fadeInDown gallery mb-1 sm:mb-4 flex relative">
+                        class="js-show-zoomIn js-show-fadeInDown gallery mb-1 lg:mb-4 flex relative">
                         <img src="images/gallery/galeri1.jpeg" alt=""
-                            class="object-cover w-full h-[200px] sm:h-[420px] bg-center rounded-2xl">
+                            class="object-cover w-full h-[200px] lg:h-[420px] bg-center rounded-2xl">
                         <div
-                            class="overlay w-full h-[200px] sm:h-[420px] absolute bg-black-500 opacity-0 hover:opacity-50 ease-in-out duration-500">
+                            class="overlay w-full h-[200px] lg:h-[420px] absolute bg-black-500 opacity-0 hover:opacity-50 ease-in-out duration-500">
                         </div>
                     </a>
                     <a href="images/gallery/galeri2.jpg" data-sub-html="Foto Gallery 2"
-                        class="js-show-zoomIn js-show-fadeInDown gallery mb-1 sm:mb-4 flex relative">
+                        class="js-show-zoomIn js-show-fadeInDown gallery mb-1 lg:mb-4 flex relative">
                         <img src="images/gallery/galeri2.jpg" alt=""
-                            class="object-cover w-full h-[200px] sm:h-[420px] bg-center rounded-2xl">
+                            class="object-cover w-full h-[200px] lg:h-[420px] bg-center rounded-2xl">
                         <div
-                            class="overlay w-full h-[200px] sm:h-[420px] absolute bg-black-500 opacity-0 hover:opacity-50 ease-in-out duration-500">
+                            class="overlay w-full h-[200px] lg:h-[420px] absolute bg-black-500 opacity-0 hover:opacity-50 ease-in-out duration-500">
                         </div>
                     </a>
                     <a href="images/gallery/galeri3.jpg" data-sub-html="Foto Gallery 3"
-                        class="js-show-zoomIn js-show-fadeInDown gallery mb-1 sm:mb-4 flex relative">
+                        class="js-show-zoomIn js-show-fadeInDown gallery mb-1 lg:mb-4 flex relative">
                         <img src="images/gallery/galeri3.jpg" alt=""
-                            class="object-cover w-full h-[200px] sm:h-[420px] bg-center rounded-2xl">
+                            class="object-cover w-full h-[200px] lg:h-[420px] bg-center rounded-2xl">
                         <div
-                            class="overlay w-full h-[200px] sm:h-[420px] absolute bg-black-500 opacity-0 hover:opacity-50 ease-in-out duration-500">
+                            class="overlay w-full h-[200px] lg:h-[420px] absolute bg-black-500 opacity-0 hover:opacity-50 ease-in-out duration-500">
                         </div>
                     </a>
                     <a href="images/gallery/galeri4.jpg" data-sub-html="Foto Gallery 4"
-                        class="js-show-zoomIn js-show-fadeInDown gallery mb-1 sm:mb-4 flex relative">
+                        class="js-show-zoomIn js-show-fadeInDown gallery mb-1 lg:mb-4 flex relative">
                         <img src="images/gallery/galeri4.jpg" alt=""
-                            class="object-cover w-full h-[200px] sm:h-[420px] bg-center rounded-2xl">
+                            class="object-cover w-full h-[200px] lg:h-[420px] bg-center rounded-2xl">
                         <div
-                            class="overlay w-full h-[200px] sm:h-[420px] absolute bg-black-500 opacity-0 hover:opacity-50 ease-in-out duration-500">
+                            class="overlay w-full h-[200px] lg:h-[420px] absolute bg-black-500 opacity-0 hover:opacity-50 ease-in-out duration-500">
                         </div>
                     </a>
                 </div>
             </div>                         
             <img src="images/background/buket-bunga-1.png" alt="bunga"
-                class="js-show-fadeInLeft absolute -top-[100px] sm:-top-[231px] -left-10 sm:-left-20 w-[160px] sm:w-[400px]"> 
-            <div class="absolute bottom-0 left-0 w-full h-[50px] sm:h-[100px] bg-no-repeat bg-cover bg-center" style="background-image: url(./images/background/bg-paper-atas.png);"></div>   
-            <img src="images/background/kupu2.png" alt="kupu-kupu" class="animate-[wiggle_6s_ease-in-out_infinite] absolute bottom-0 right-1/4 w-[80px] sm:w-[160px] -scale-x-100">  
+                class="animate-[wiggle_6s_ease-in-out_infinite] absolute -top-[100px] lg:-top-[231px] -left-10 lg:-left-20 w-[160px] md:w-[200px] lg:w-[400px]"> 
+            <div class="absolute bottom-0 left-0 w-full h-[50px] lg:h-[100px] bg-no-repeat bg-cover bg-center" style="background-image: url(./images/background/bg-paper-atas.png);"></div>   
+            <img src="images/background/kupu2.png" alt="kupu-kupu" class="animate-[wiggle_6s_ease-in-out_infinite] absolute bottom-0 right-1/4 w-[80px] lg:w-[160px] -scale-x-100">  
         </section>
     </div>
 
     <div class="isi-undangan hidden">
-        <section class="flex items-center justify-center relative bg-paper-100 py-2 sm:py-12">
-            <div class="container max-w-screen-xl px-4 sm:px-0 mx-auto">
+        <section class="flex items-center justify-center relative bg-paper-100 py-2 lg:py-12">
+            <div class="container max-w-screen-xl px-4 lg:px-0 mx-auto">
                 <div class="columns-1">
                     <iframe src="https://www.youtube.com/embed/1-GLrbJzG3A" class="js-show-fadeInUp w-full aspect-video"
                         title="YouTube video player" frameborder="0"
@@ -403,17 +408,17 @@
     </div>
 
     <div class="isi-undangan hidden">
-        <section class="pb-6 sm:pb-10 pt-20 sm:pt-32 w-full h-full sm:h-screen flex items-center justify-center relative overflow-hidden" id="section-ucapandoa">
-            <div class="absolute top-0 left-0 w-full h-full sm:h-screen bg-no-repeat bg-cover bg-center" style="background-image: url(./images/background/background.jpg);"></div>             
-            <div class="absolute top-0 left-0 w-full h-[50px] sm:h-[100px] bg-no-repeat bg-cover bg-center" style="background-image: url(./images/background/bg-paper-bawah.png);"></div>
-            <div class="container max-w-screen-xl px-4 sm:px-0 mx-auto relative">
-                <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 bg-grey-50 box-clip-path rounded-3xl p-6  sm:p-10">
-                    <div class="js-show-fadeInUp relative mb-6 sm:mb-0">
-                        <h1 class="font-nautigal text-5xl sm:text-7xl text-oldRose-400 italic text-center">RSVP</h1>
+        <section class="pb-6 md:pb-8 lg:pb-10 pt-20 lg:pt-32 w-full h-full lg:min-h-screen flex items-center justify-center relative overflow-hidden" id="section-ucapandoa">
+            <div class="absolute top-0 left-0 w-full h-full bg-no-repeat bg-cover bg-center" style="background-image: url(./images/background/background.jpg);"></div>             
+            <div class="absolute top-0 left-0 w-full h-[50px] lg:h-[100px] bg-no-repeat bg-cover bg-center" style="background-image: url(./images/background/bg-paper-bawah.png);"></div>
+            <div class="container max-w-screen-xl px-4 lg:px-0 mx-auto relative">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 bg-grey-50 box-clip-path-sm md:box-clip-path rounded-3xl p-6  lg:p-10">
+                    <div class="js-show-fadeInUp relative mb-6 lg:mb-0">
+                        <h1 class="font-nautigal text-5xl lg:text-7xl text-oldRose-400 italic text-center">RSVP</h1>
                         <form action="">
                             <div class="text-center">
-                                <div class="h-px w-20 mx-auto bg-oldGreen-500 my-3 sm:my-6"></div>
-                                <p class="font-quicksand text-sm sm:text-normal text-oldGreen-500 mb-5 leading-6 sm:leading-8">
+                                <div class="h-px w-20 mx-auto bg-oldGreen-500 my-3 lg:my-6"></div>
+                                <p class="font-quicksand text-sm lg:text-normal text-oldGreen-500 mb-5 leading-6 lg:leading-8">
                                     Kami mengharapkan konfirmasi kedatangan Anda pada form berikut:
                                 </p>
                             </div>
@@ -484,11 +489,11 @@
                                 </div>
                             </div>
                             <button type="submit"
-                                class="font-quicksand text-base text-white bg-grey-500 py-1.5 sm:py-2 rounded-3xl w-full">Kirim</button>
+                                class="font-quicksand text-base text-white bg-grey-500 py-1.5 lg:py-2 rounded-3xl w-full">Kirim</button>
                         </form>
                     </div>
                     <div class="js-show-fadeInUp text-center">
-                        <h1 class="font-nautigal text-5xl sm:text-7xl text-oldRose-400 italic text-center mb-6">Ucapan & Doa</h1>
+                        <h1 class="font-nautigal text-5xl lg:text-7xl text-oldRose-400 italic text-center mb-6">Ucapan & Doa</h1>
                         <div class="overflow-auto pr-4" style="max-height: 55vh;">
                             <div class="rounded-xl text-center bg-oldRose-10 p-2.5 mb-2.5">
                                 <p class="font-quicksand text-brown-400 text-sm font-semibold">Riska</p>
@@ -554,102 +559,102 @@
                         </div>
                     </div>
                 </div>
-                <img src="images/background/kupu2.png" alt="kupu-kupu" class="animate-[wiggle_6s_ease-in-out_infinite] absolute top-0 right-0 sm:left-2/4 sm:-translate-x-2/4 w-[80px] sm:w-[160px]">  
+                <img src="images/background/kupu2.png" alt="kupu-kupu" class="animate-[wiggle_6s_ease-in-out_infinite] absolute top-0 right-0 lg:left-2/4 lg:-translate-x-2/4 w-[80px] md:w-[120px] lg:w-[160px]">  
             </div>       
             <img src="images/background/buket-bunga-2.png" alt="bunga"
-                class="js-show-fadeInLeft absolute -bottom-[63px] sm:-bottom-[200px] -right-[50px] sm:-right-[140px] w-[120px] sm:w-[340px]">        
+                class="animate-[wiggle_6s_ease-in-out_infinite] absolute -bottom-[63px] md:-bottom-[100px] lg:-bottom-[200px] -right-[50px] lg:-right-[140px] w-[120px] md:w-[180px] lg:w-[340px]">        
         </section>
     </div>
 
     <div class="isi-undangan hidden">
-        <section class="js-show-fadeIn py-6 sm:py-10 w-full h-full sm:h-screen flex items-center justify-center relative overflow-hidden">
-            <div class="absolute top-0 left-0 w-full h-full sm:h-screen bg-no-repeat bg-cover bg-center -scale-y-100"
+        <section class="js-show-fadeIn py-6 lg:py-10 w-full h-full lg:h-screen flex items-center justify-center relative overflow-hidden">
+            <div class="absolute top-0 left-0 w-full h-full lg:h-screen bg-no-repeat bg-cover bg-center -scale-y-100"
                 style="background-image: url(./images/background/background.jpg);"></div>
-            <div class="container max-w-screen-xl px-4 sm:px-0 mx-auto relative">
-                <div class="js-show-fadeInUp columns-1 bg-grey-50 rounded-3xl p-10 mb-8 sm:mb-20 box-clip-path">
+            <div class="container max-w-screen-xl px-4 lg:px-0 mx-auto relative">
+                <div class="js-show-fadeInUp columns-1 bg-grey-50 rounded-3xl p-10 mb-8 lg:mb-20 box-clip-path-sm">
                     <div class="text-center">
-                        <h1 class="font-nautigal text-5xl sm:text-7xl text-oldRose-400 italic text-center mb-6">
+                        <h1 class="font-nautigal text-5xl lg:text-7xl text-oldRose-400 italic text-center mb-6">
                             Wedding Gifs
                         </h1>
-                        <p class="font-belle text-base sm:text-2xl text-oldGreen-500 mb-6">
+                        <p class="font-belle text-base lg:text-2xl text-oldGreen-500 mb-6">
                             Silahkan klik tombol di bawah ini untuk mengirimkan hadiah secara online kepada kami:
                         </p>
-                        <a href="#" class="font-belle text-base sm:text-2xl text-white bg-oldRose-500 py-2 px-4 rounded-3xl">Open</a>
+                        <a href="#" class="font-belle text-base lg:text-2xl text-white bg-oldRose-500 py-2 px-4 rounded-3xl">Open</a>
                     </div>
                 </div>
-                <div class="js-show-fadeInUp columns-1 bg-grey-50 box-clip-path rounded-3xl p-10 relative">
+                <div class="js-show-fadeInUp columns-1 bg-grey-50 box-clip-path-sm rounded-3xl p-10 relative">
                     <div class="text-center">
-                        <h1 class="font-nautigal text-5xl sm:text-7xl text-oldRose-400 italic text-center mb-6">
+                        <h1 class="font-nautigal text-5xl lg:text-7xl text-oldRose-400 italic text-center mb-6">
                             Protokol Kesehatan
                         </h1>
                     </div>
                     
-                    <div class="grid grid-cols-2 gap-2 sm:grid-cols-4 sm:gap-4">
-                        <div class="cards text-center sm:p-6 mb-2 sm:mb-0">
+                    <div class="grid grid-cols-2 gap-2 lg:grid-cols-4 lg:gap-4">
+                        <div class="cards text-center lg:p-6 mb-2 lg:mb-0">
                             <div class="mb-2"
                                 style="filter: invert(70%) sepia(16%) saturate(491%) hue-rotate(334deg) brightness(85%) contrast(82%);">
                                 <img src="images/cards/mask-1-4-3.png" class="mx-auto w-20 h-20" alt="">
                             </div>
-                            <p class="font-belle text-base sm:text-2xl text-oldGreen-500">
+                            <p class="font-belle text-base lg:text-2xl text-oldGreen-500">
                                 Menggunakan Masker
                             </p>
                         </div>
-                        <div class="cards text-center sm:p-6 mb-2 sm:mb-0">
+                        <div class="cards text-center lg:p-6 mb-2 lg:mb-0">
                             <div class="mb-2"
                                 style="filter: invert(70%) sepia(16%) saturate(491%) hue-rotate(334deg) brightness(85%) contrast(82%);">
                                 <img src="images/cards/wash-your-hands-4-3.png" class="mx-auto w-20 h-20" alt="">
                             </div>
-                            <p class="font-belle text-base sm:text-2xl text-oldGreen-500">
+                            <p class="font-belle text-base lg:text-2xl text-oldGreen-500">
                                 Mencuci Tangan
                             </p>
                         </div>
-                        <div class="cards text-center sm:p-6 mb-2 sm:mb-0">
+                        <div class="cards text-center lg:p-6 mb-2 lg:mb-0">
                             <div class="mb-2"
                                 style="filter: invert(70%) sepia(16%) saturate(491%) hue-rotate(334deg) brightness(85%) contrast(82%);">
                                 <img src="images/cards/thermometer-4-3.png" class="mx-auto w-20 h-20" alt="">
                             </div>
-                            <p class="font-belle text-base sm:text-2xl text-oldGreen-500">
+                            <p class="font-belle text-base lg:text-2xl text-oldGreen-500">
                                 Cek Suhu Tubuh
                             </p>
                         </div>
-                        <div class="cards text-center sm:p-6 mb-2 sm:mb-0">
+                        <div class="cards text-center lg:p-6 mb-2 lg:mb-0">
                             <div class="mb-2"
                                 style="filter: invert(70%) sepia(16%) saturate(491%) hue-rotate(334deg) brightness(85%) contrast(82%);">
                                 <img src="images/cards/social-distancing-4-3.png" class="mx-auto w-20 h-20" alt="">
                             </div>
-                            <p class="font-belle text-base sm:text-2xl text-oldGreen-500">
+                            <p class="font-belle text-base lg:text-2xl text-oldGreen-500">
                                 Menjaga Jarak
                             </p>
                         </div>
                     </div>
-                    <img src="images/background/kupu2.png" alt="kupu-kupu" class="animate-[wiggle_6s_ease-in-out_infinite] absolute top-4 sm:top-0 left-4 sm:left-10 w-[80px] sm:w-[160px] -scale-x-100">  
+                    <img src="images/background/kupu2.png" alt="kupu-kupu" class="animate-[wiggle_6s_ease-in-out_infinite] absolute top-4 lg:top-0 left-4 lg:left-10 w-[80px] lg:w-[160px] -scale-x-100">  
                 </div>
             </div>
             <img src="images/background/buket-bunga-2.png" alt="bunga"
-                class="js-show-fadeInLeft absolute -top-[100px] sm:-top-[264px] -right-[50px] sm:-right-[140px] w-[120px] sm:w-[340px]">
+                class="animate-[wiggle_6s_ease-in-out_infinite] absolute -top-[100px] md:-top-[164px] lg:-top-[264px] -right-[50px] lg:-right-[140px] w-[120px] md:w-[180px] lg:w-[340px]">
         </section>
     </div>
 
     <div class="isi-undangan hidden">
-        <section class="w-full h-[300px] sm:h-[500px] flex justify-center relative">
-            <div class="absolute top-0 left-0 w-full h-[300px] sm:h-[500px] bg-no-repeat bg-cover bg-top" style="background-image: url(./images/background/background.jpg);"></div>
+        <section class="w-full h-[300px] lg:h-[500px] flex justify-center relative">
+            <div class="absolute top-0 left-0 w-full h-[300px] lg:h-[500px] bg-no-repeat bg-cover bg-top" style="background-image: url(./images/background/background.jpg);"></div>
             <div class="container max-w-screen-xl relative flex justify-center mx-auto ">
-                <div class="js-show-fadeInUp columns-1 sm:w-2/4 pt-10">
+                <div class="js-show-fadeInUp columns-1 w-3/4 md:w-2/4 pt-10">
                     <div>
-                        <img src="images/background/bunga-kabar.png" alt="" class="w-6/12 mx-auto">
+                        <img src="images/background/bunga-kabar.png" alt="" class="w-3/4 md:w-6/12 mx-auto">
                     </div>
                 </div>
             </div>            
-            <div class="absolute bottom-0 left-0 w-full h-[50px] sm:h-[100px] bg-no-repeat bg-cover bg-center" style="background-image: url(./images/background/bg-paper-atas-2.png);"></div>
+            <div class="absolute bottom-0 left-0 w-full h-[50px] lg:h-[100px] bg-no-repeat bg-cover bg-center" style="background-image: url(./images/background/bg-paper-atas-2.png);"></div>
         </section>
     </div>
 
     <div class="isi-undangan hidden">
-        <section class="w-full h-80 sm:h-screen flex items-end justify-center relative bg-no-repeat bg-cover bg-center bg-fixed"
+        <section class="w-full h-screen lg:h-[900px] flex items-end justify-center relative bg-no-repeat bg-cover bg-center bg-fixed"
             style="background-image: url(./images/background/bg-footer.jpg);">
-            <div class=" js-show-fadeIn absolute top-0 left-0 w-full h-80 sm:h-screen opacity-60"
+            <div class=" js-show-fadeIn absolute top-0 left-0 w-full h-screen lg:h-[900px] opacity-60"
                 style="background-image: linear-gradient(180deg, #FFFFFF00 0%, #171717 100%);"></div>            
-            <div class="absolute top-0 left-0 w-full h-[50px] sm:h-[100px] bg-no-repeat bg-cover bg-center" style="background-image: url(./images/background/bg-paper-bawah-2.png);"></div>
+            <div class="absolute top-0 left-0 w-full h-[50px] lg:h-[100px] bg-no-repeat bg-cover bg-center" style="background-image: url(./images/background/bg-paper-bawah-2.png);"></div>
         </section>
     </div>
 
